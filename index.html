@@ -9,8 +9,9 @@
 <script>
   let btn = document.getElementById("btn"); //получаем кнопку 
   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-	
-    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
+	console.log('норм')
+    	tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
+	  console.log(tg)
 	  tg.sendData("some string that we need to send"); 
   });
 </script>
