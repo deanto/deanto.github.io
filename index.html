@@ -3,5 +3,14 @@
 <body>
 <h1>Hello World</h1>
 <p>Приветы</p>
+<button id="btn" class="button">Show/Hide Main Button</button>
 </body>
+<script>
+  let btn = document.getElementById("btn"); //получаем кнопку 
+  btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
+	  tg.sendData("some string that we need to send"); 
+  });
+</script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 </html>
