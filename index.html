@@ -4,7 +4,7 @@
 <h1>Hello World</h1>
 <p>Приветы</p>
 <button id="btn" class="button">ППП2</button>
-	<input id="inp" class="input" text="as"/>
+	<input id="inp" type="text"/>
 </body>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
@@ -12,10 +12,8 @@
   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
 	console.log('норм')
 	let inpt = document.getElementById("inp"); //получаем кнопку 
-	  inpt.text = "asd"
     	tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
-	  tg.initData
-	  console.log(tg.initData)
+	  inpt.value = tg.initData
 	  tg.sendData("some string that we need to send"); 
   });
 </script>
