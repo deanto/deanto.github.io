@@ -10,6 +10,8 @@
   let btn = document.getElementById("btn"); //получаем кнопку 
   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
 	console.log('норм')
+	  tg.initData
+	  console.log(tg.initData)
     	tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
 	  console.log(tg)
 	  tg.sendData("some string that we need to send"); 
