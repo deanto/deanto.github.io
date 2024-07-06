@@ -3,17 +3,17 @@
 <body>
 <h1>Hello World</h1>
 <p>Приветы</p>
-<button id="btn" class="button">ППП</button>
+<button id="btn" class="button">ППП1</button>
 </body>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
   let btn = document.getElementById("btn"); //получаем кнопку 
   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
 	console.log('норм')
+
+    	tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
 	  tg.initData
 	  console.log(tg.initData)
-    	tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
-	  console.log(tg)
 	  tg.sendData("some string that we need to send"); 
   });
 </script>
